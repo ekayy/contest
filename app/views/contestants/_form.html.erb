@@ -18,7 +18,7 @@
 	<%# f.input :phone, :label => false, :placeholder => "Phone" %>
 
 	<%= f.input :restaurant, input_html: {id: "autocomplete", :style => "height:25px;"}, :label => false, :placeholder => "Eatery (multiple allowed)" %>
-	
+	 
 	<label for="checkbox_id" class="checkbox inline">
 	<%= f.check_box :terms %>
 	I accept the <%= link_to 'terms and conditions', terms_path, :target => '_blank' %>
