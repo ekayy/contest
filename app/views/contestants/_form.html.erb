@@ -3,10 +3,10 @@
 
 	<% if @contestant.errors.any? %>
     <div class="error_messages">
-      <h2>Form is invalid</h2>
+    
       <ul>
         <% @contestant.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+          <li style="color:red; top: -50px;"><%= message %></li>
         <% end %>
       </ul>
     </div>
@@ -17,11 +17,11 @@
 	<%= f.input :first_name, :label => false, :placeholder => "Name", input_html: {:style => "height:25px;"} %>
 	<%# f.input :phone, :label => false, :placeholder => "Phone" %>
 
-	<%= f.input :restaurant, input_html: {id: "autocomplete", :style => "height:25px;"}, :label => false, :placeholder => "Restaurant (multiple allowed)" %>
+	<%= f.input :restaurant, input_html: {id: "autocomplete", :style => "height:25px;"}, :label => false, :placeholder => "Eatery (multiple allowed)" %>
 	
 	<label for="checkbox_id" class="checkbox inline">
 	<%= f.check_box :terms %>
-	I accept the <%= link_to 'terms and conditions', contestants_terms_path %>
+	I accept the <%= link_to 'terms and conditions', terms_path, :target => '_blank' %>
 	</label>
 
 	<br/><br/>

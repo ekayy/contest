@@ -1,14 +1,16 @@
 ContestSignup::Application.routes.draw do
 
-  get "contestants/map"  
-  get "contestants/rules"  
-  get "contestants/terms"  
-  get "contestants/list"
-  get "contestants/about"
-
-  resources :contestants
+  match "map"   => "contestants#map"
+  match "rules"   => "contestants#rules"  
+  match "terms"   => "contestants#terms"  
+  match "list"   => "contestants#list"
+  match "about"   => "contestants#about"
+  match "new"   => "contestants#new"
+  match "phototips"   => "contestants#phototips"
 
   root :to => "contestants#new"
+
+  resources :contestants
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
