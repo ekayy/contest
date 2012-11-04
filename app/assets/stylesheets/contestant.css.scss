@@ -124,6 +124,7 @@ ul.ui-autocomplete {
 	background-color: rgba(0,0,0,.82);
   box-shadow:  0 1px 3px rgba(34,25,25,0.4);
   position:relative;
+  bottom: 20px;
   width: 70%;
   margin: 0% 15% 0 15%;
   padding: 25px 40px;
@@ -135,8 +136,32 @@ ul.ui-autocomplete {
 	background-color: rgba(0,0,0,.82);
   box-shadow:  0 1px 3px rgba(34,25,25,0.4);
   position:relative;
+  bottom: 20px;
   width: 80%;
   margin: 5% auto 0 auto;
   padding: 25px 40px;
   color:white;
+}
+
+/* Map and restaurant list styling */
+
+#list {
+	display:block;
+	position: relative; bottom: 20px;
+	background-color: rgba(255,255,255,.95);
+  box-shadow:  0 1px 3px rgba(34,25,25,0.4);
+  overflow:auto;
+  width: 80%;
+  margin: 5% auto 0 auto;
+  padding: 25px 0 25px 40px;
+  color:black;
+}
+// li {
+//     margin:15px 0 0 0;
+//     padding:0 10px 0 0;
+//     line-height:15px;
+// }
+.licol {
+    float: left;
+    width: 280px;
 }
