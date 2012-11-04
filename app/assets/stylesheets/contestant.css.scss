@@ -20,26 +20,14 @@ body {
 h1 {padding: 0 0 0 10px;}
 
 .wrapper {
-
 	display:block;
 	background-color: rgba(0, 0, 0, .85);
   box-shadow:  0 1px 3px rgba(34,25,25,0.4);
   position:relative;
-  width: 80%;
-  margin: 5% 10% 0 10%;
-  padding: 20px;
-}
-
-#mapWrap {
-	overflow:scroll-x;
-	#legWrap {
-		// background-color: #333;
-		// background-color: rgba(0, 0, 0, 0.8);
-		color: white;
-		padding: 4px 2% 4px 4%;
-		
-		width: 94%;
-	}
+  width: 72%;
+  // min-width:840px;
+  margin: 5% auto 0 auto;
+  padding: 20px 20px 20px 30px;
 }
 
 ol {
@@ -52,7 +40,6 @@ ol > li {
     margin-bottom: .5em;
     margin-left: 2em;
 }
-
 ol > li:before {
     display: inline;
     content: "Step " counter(item) ":  ";
@@ -72,13 +59,6 @@ li {padding-bottom: 5px; margin-left: -6px;}
 	text-align: center;
 }
 
-// #welcome {
-// 	padding: 10px;
-//   margin-bottom: 20px;
-//   font-size: 13px;
-//   background: white;
-//   box-shadow:  0 1px 3px rgba(34,25,25,0.4);
-// }
 
 #rules {
 	float:left;
@@ -93,9 +73,9 @@ li {padding-bottom: 5px; margin-left: -6px;}
 #form {
 	position: relative;
 	display:inline-block;
-	left:50px;
+	left:10px;
 	padding: 20px;
-	top: 20px;
+	top: 10px;
 	// color:black;
 }
 

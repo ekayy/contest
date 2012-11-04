@@ -9,10 +9,11 @@
       Thanks for participating in the weSpot SF Photo Contest!
     </p>
     <p>
-      You have signed up to take photos for <%= @contestant.restaurant %>. Please submit your photos by Nov. 25 to be eligible for prizes.</p>
+      You have signed up to take photos for <%= @contestant.restaurant %>. Please submit your photos by Nov. 26 to be eligible for prizes. Send your photos to <strong>contest@wespot.co</strong>. Please include your full name, name of local eatery, and attached photos. For the subject title, please include only the name of the local eatery.</p>
     
-    <p>A reminder email will be sent on where and how to vote, once voting begins on Nov. 25</p>
-    <p>To check rules: <%= link_to 'rules', rules_path %></p>
-    <p>To check photo guidelines: <%= link_to 'rules', phototips_path %></p>
+    <p>An email will be sent to remind you to return to weSpot to cast your votes once voting begins on Nov. 19.</p>
+
+    <p>To check rules: <%= @url %></p>
+    <p>To check photo guidelines: <%= @url2 %></p>
   </body>
 </html>

@@ -314,8 +314,6 @@ $(function(){
 	            }) );
 	        }
 	});
-	});
-
-$("#myiframe").contents().find('#legWrap')
+});
 
 
