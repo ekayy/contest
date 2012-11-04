@@ -1,0 +1,136 @@
+// Place all the styles related to the contestant controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$navbarHeight: 30px;
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+body {
+	font-family: 'Ubuntu', serif;
+	padding-top: 30px;
+	background:transparent url('http://anotherheader.files.wordpress.com/2010/03/dsc_7951.jpg') no-repeat fixed top center;
+    -webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		color:white;
+}
+
+h1 {padding: 0 0 0 10px;}
+
+.wrapper {
+
+	display:block;
+	background-color: rgba(0, 20, 20, .82);
+  box-shadow:  0 1px 3px rgba(34,25,25,0.4);
+  position:relative;
+  width: 80%;
+  margin: 5% 10% 0 10%;
+  padding: 20px;
+}
+
+#mapWrap {
+	overflow:scroll-x;
+	#legWrap {
+		// background-color: #333;
+		// background-color: rgba(0, 0, 0, 0.8);
+		color: white;
+		padding: 4px 2% 4px 4%;
+		
+		width: 94%;
+	}
+}
+
+ol {
+    counter-reset: item;
+    margin-left: 0;
+    padding-left: 0;
+}
+ol > li {
+    display: block;
+    margin-bottom: .5em;
+    margin-left: 2em;
+}
+
+ol > li:before {
+    display: inline;
+    content: "Step " counter(item) ":  ";
+    counter-increment: item;
+    width: 3em;
+    margin-left: -3.6em;
+
+    font-weight: bold
+}​
+
+
+#step { margin-left: -10px; }
+ul {font-weight:normal;padding-top:5px;}
+li {padding-bottom: 5px; margin-left: -6px;}
+
+.center {
+	text-align: center;
+}
+
+// #welcome {
+// 	padding: 10px;
+//   margin-bottom: 20px;
+//   font-size: 13px;
+//   background: white;
+//   box-shadow:  0 1px 3px rgba(34,25,25,0.4);
+// }
+
+#rules {
+	float:left;
+	position: relative;
+	width:500px;
+	padding: 20px 20px 20px 40px;
+	// background-color: rgba(255, 255, 255, .62);
+ //  box-shadow:  0 1px 3px rgba(34,25,25,0.4);
+  // color:black;
+}
+
+#form {
+	position: relative;
+	display:inline-block;
+	left:50px;
+	padding: 20px;
+	top: 20px;
+	// color:black;
+}
+
+#error_explanation {
+  color:#f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+ }
+
+ul.ui-autocomplete {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: solid 1px #999;
+  cursor: default;
+  li {
+    background-color: #FFF;
+    border-top: solid 1px #DDD;
+    margin: 0;
+    padding: 0;
+    a {
+      color: #000;
+      display: block;
+      padding: 3px;
+    }
+    a.ui-state-hover, a.ui-state-active {
+      background-color: #FFFCB2;
+    }
+  }
+} 

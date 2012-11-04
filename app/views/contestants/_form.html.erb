@@ -1,0 +1,29 @@
+
+<%= simple_form_for(@contestant) do |f| %>
+
+	<% if @contestant.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% @contestant.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+	<%= f.input :email, :label => false, :placeholder => "Email", input_html: {:style => "height:25px;"} %>
+	<%= f.input :first_name, :label => false, :placeholder => "Name", input_html: {:style => "height:25px;"} %>
+	<%# f.input :phone, :label => false, :placeholder => "Phone" %>
+
+	<%= f.input :restaurant, input_html: {id: "autocomplete", :style => "height:25px;"}, :label => false, :placeholder => "Restaurant (multiple allowed)" %>
+	
+	<label for="checkbox_id" class="checkbox inline">
+	<%= f.check_box :terms %>
+	I accept the <%= link_to 'terms and conditions', contestants_terms_path %>
+	</label>
+
+	<br/><br/>
+	<%= f.submit 'Sign Up', :class => 'btn btn-success' %>
+<% end %>

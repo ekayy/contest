@@ -1,0 +1,74 @@
+
+
+<!-- <div id="welcome">
+	<p>Dear Family and Friends,</p>
+
+	<p>Our team has been busy putting together a platform that we believe can help users more effectively explore local eateries and obtain recommendations.  We will appreciate it if you can help us by participating in a photography contest we will be hosting over the next few weeks!  Take your camera and your appetite to go take pictures at any of the 300+ San Francisco eateries we have compiled. Photo sets submitted will compete for prizes such as dinner for two at Coi or Benu in San Francisco, CA.  You can sign up in five easy steps. Please see <insert link: contest details> for further detail of the contest deadlines, prizes and other guidelines.</p>
+</div> -->
+
+<% 
+=begin %>
+<%= image_tag "morimoto1edit.jpg", :style => "width: 180px;" %>
+<%= image_tag "morimoto2edit.jpg", :style => "width: 180px;" %>
+<%= image_tag "morimoto3edit.jpg", :style => "width: 180px;" %>
+<%= image_tag "morimoto4edit.jpg", :style => "width: 180px;" %>
+<%= image_tag "morimoto5edit.jpg", :style => "width: 180px;" %>
+
+<%
+=end %>
+
+<div class="row-fluid">
+	<div class="span12">
+
+<div class="wrapper">
+	<h1  style="color:white;" ><span style="color: #9f0d25">weSpot</span> SF Photo Contest </h1>
+	<div class="inner"
+	<div id="rules" >
+		
+		<ol class="unstyled">
+			<li>
+				Sign up for an eatery on our <%= link_to 'restaurant list', contestants_map_path %>. 
+			</li>
+			<li>
+				Take photos of your eatery according to <%= link_to 'photo guidelines', contestants_rules_path %>.
+				<!-- <ul>
+					<li>Show off the eatery with a set of 3-5 photos.</li>
+					<li>Required photo categories:</li>
+						<ol>
+							<li>Ambiance (inside or outside)</li>
+							<li>Food</li>
+							<li>Creative</li>
+						</ol>
+					<li>3 photos of each set will be required to be in landscape.</li>
+					<li>Photos must be shot and submitted in the highest quality setting.</li>
+				</ul> -->
+			</li>
+			<li>
+				 Submit your photos to contest@wespot.co by Nov. 21, 2012. 
+			</li>
+			<li>
+				Get your friends to vote and win an awesome dinner for 2 in SF! 
+				<ul>
+					<li><strong>Top Prize:</strong> Coi or Benu* (2 Michelin Star Experience)</li>
+					<li><strong>2nd:</strong> The House</li>
+					<li><strong>3rd:</strong> Kappou Gom</li>
+				</ul>
+			</li>
+			<!-- <li id="step">Important Dates**:</li>
+				<ul>
+					<li>Sign-up and submit photos by November 21, 2012 at 11:59PM PDT.</li>
+					<li>Voting begins: November 16, 2012.</li>
+					<li>Voting ends: December 3, 2012 at 11:59PM PDT.</li>
+				</ul>
+			</li> -->
+		</ol>
+		<div style="margin-left:-25px;"><%= link_to 'See full contest rules', contestants_rules_path %></div>
+	</div>
+
+	<div id="form">
+	<%= render 'form' %>			
+	</div>
+
+
+
+</div>

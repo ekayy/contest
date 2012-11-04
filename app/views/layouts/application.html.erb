@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>weSpot | Photo Contest</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+
+  <style type="text/css">
+  	
+  	.fr {float:right;display:block;}
+  	
+  	ol li {font-size:16px; line-height: 20px;}
+
+	</style>
+
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+
+
+<body>
+
+  <header class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <nav>
+        <ul class="nav pull-left">
+          <li><%= link_to "weSpot", root_url %></li>
+        </ul>
+
+
+        <ul class="nav pull-right">
+           
+            <li><%= link_to "Restaurant List", contestants_map_path %></li>
+            <li><%= link_to "Contest Rules", contestants_rules_path %></li>
+            <li><%= link_to "About", contestants_about_path %></li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container" style="padding-top:30px;">
+<%= yield %>
+</div>
+
+</body>
+</html>
