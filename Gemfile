@@ -4,6 +4,7 @@ gem 'rails', '3.2.8'
 gem 'thin'
 gem "bootstrap-sass", ">= 2.1.0.0"
 gem "simple_form", ">= 2.0.3"
+gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
