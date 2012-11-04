@@ -1,5 +1,5 @@
 class Contestant < ActiveRecord::Base
-  attr_accessible :email, :first_name, :last_name, :phone, :restaurant, :terms
+  attr_accessible :email, :name, :restaurant, :terms
 
   validates_acceptance_of :terms, :on => :create, :allow_nil => false
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
