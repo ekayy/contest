@@ -43,6 +43,7 @@ GEM
     eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    google-analytics-rails (0.0.3)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -116,6 +117,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (>= 2.1.0.0)
   coffee-rails (~> 3.2.1)
+  google-analytics-rails
   jquery-rails
   newrelic_rpm
   pg

@@ -74,4 +74,8 @@ ContestSignup::Application.configure do
     :password             => 'ericwu88',
     :authentication       => 'plain',
     :enable_starttls_auto => true  }
+
+
+  # Enable google analytics
+  GA.tracker = "UA-36088740-1"
 end
